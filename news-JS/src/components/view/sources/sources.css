@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap');
+
+.sources {
+    max-width: 95%;
+    height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 30px 0;
+    overflow: auto;
+    font: 1.3em 'Lato', sans-serif;
+}
+
+.sources::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sources::-webkit-scrollbar-track {
+    border: 0.5px solid #939597;
+    border-radius: 5px;
+}
+
+.sources::-webkit-scrollbar-thumb {
+    background: #ccd7ff;
+    border-radius: 5px;
+}
+
+.source__item {
+    color: #0072b5;
+    background: none;
+    border: 2px solid #34568b;
+    border-radius: 22px;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.source__item:hover,
+.source__item:focus {
+    color: #88b04b;
+    border-color: #009b77;
+    box-shadow: 0 0.5em 0.5em -0.4em #88b04b;
+    transform: translateY(-0.25em);
+}
+
+.source__item-name {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.alph-btns {
+    max-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background: #a0daa9;
+    color: #282d3c;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: 0.4s ease;
+}
+
+.letter:hover {
+    box-shadow: none;
+}
+
+.activeLetter {
+    box-shadow: none;
+    color: #fff;
+}
